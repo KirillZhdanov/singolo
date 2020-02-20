@@ -117,15 +117,77 @@ color:#f06c64;
     font-family: "Lato-Black";
     font-weight: 900;
     text-align: left;
+    margin-bottom: 25px;
    
 }
 .Serv-Content p{
+    display: block;
+    text-align: justify;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato-Regular";
-    font-weight: lighter;
-    word-spacing: -1px;
+    font-weight: 100;
+    word-spacing: -1.2px;
     text-align: left;
+     
+}
+.container{
+        
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    
+}
+.container h2{
+    font-size: 18px;
+line-height: 18px;
+color: #666d89;
+font-family: "Lato-Bold";
+font-weight: 900;
+text-align: left;
+}
+.container p{
+    width: 219px;
+height: 128px;
+font-size: 12px;
+line-height: 22px;
+color: #767e9e;
+font-family: "Lato-Regular";
+font-weight: 400;
+text-align: left;
+}
+.CustomDesign{
    
+    margin-left: 20px;
+    margin-bottom:-50px ; 
+}
+/*
+ПСЕВДОЭЛЕМЕНТАМИ СЕГОДНЯ НЕ ПОЛУЧИЛОСЬ,ЛИБО ЧЕРЕЗ НИХ ТАКИ СДЕЛАЮ,ЛИБО ЧЕРЕЗ DIV'Ы
+.CustomDesign::before{
+    float: left;
+    margin-top: 15px;
+
+    content:url(../../../RSSchool/singolo/singolo/assets/img/pen.png);
+    height: 200px;
+
+}*/
+.Ideas{
+    
+    margin-bottom:-50px ;
+}
+
+.LoveIs{
+    margin-bottom:-50px ;
+}
+.Responsive{
+    margin-top: -30px;
+}
+.Support{
+    margin-top: -30px;
+    
+}
+.LikeAStar{
+    margin-top: -30px;
 }
