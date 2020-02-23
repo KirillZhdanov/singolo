@@ -13,6 +13,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 .wrapper{
     
@@ -28,12 +29,10 @@ header{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
     text-transform: uppercase;
-    
     background-color: #2d303a;
-   /* padding: 28px 40px 20px 41px;*/
-   height: 89px;
+    height: 89px;
     border-bottom: 6px solid #323746;
 }
 .logo h1{
@@ -101,10 +100,7 @@ color:#f06c64;
     background-color: #f06c64;
     min-height: 594px;
     width: 100%;
-    
     border-bottom:6px solid #ea676b;
-    
-
 }
 .verticalPhone{
     position: absolute;
@@ -132,11 +128,8 @@ color:#f06c64;
     width: 30px;
     border: none;
     margin-left: 42px;
-   
 }
 .rightArrow{
-    
-
     position: absolute;
     background: url(../../../RSSchool/singolo/singolo/assets/img/rightArrow.png) no-repeat;
     height:30px;
@@ -144,15 +137,14 @@ color:#f06c64;
     border: none;
     margin-left: 964px;
     margin-top: 281px;
-    
 }
 .Services{
     padding-top:10px;
-    height: 495px;
+    height: 484px;
     background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
 }
 .Serv-Content {
-    
     margin:60px 30px 35px 40px ;
 }
 .Serv-Content h1{
@@ -163,7 +155,6 @@ color:#f06c64;
     font-weight: 900;
     text-align: left;
     margin-bottom: 25px;
-   
 }
 .Serv-Content p{
     display: block;
@@ -173,20 +164,17 @@ color:#f06c64;
     color: #767e9e;
     font-family: "Lato-Regular";
     font-weight: 100;
-    word-spacing: -0.8px;
-    letter-spacing: -0.35px;
-    text-align: justify;
+    letter-spacing: -0.17px;
+    text-align: left;
     margin-top: 27px;
-     
+    word-spacing: 0.3.5px;
 }
 .container{
-        
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     margin-top: 29px;
-    
 }
 .container h2{
     font-size: 19px;
@@ -209,76 +197,102 @@ color:#f06c64;
     margin-top: -8px;
     text-align: justify;
     word-spacing: -0.7px;
-    letter-spacing: 0.1px;
-   
+    letter-spacing: 0.1px;  
 }
-.CustomDesign{
-   
+.CustomDesign{ 
     margin-left: 20px;
     margin-bottom:-50px ; 
 }
-/*
-ПСЕВДОЭЛЕМЕНТАМИ СЕГОДНЯ НЕ ПОЛУЧИЛОСЬ,ЛИБО ЧЕРЕЗ НИХ ТАКИ СДЕЛАЮ,ЛИБО ЧЕРЕЗ DIV'Ы
-.CustomDesign::before{
-    float: left;
-    margin-top: 15px;
-
-    content:url(../../../RSSchool/singolo/singolo/assets/img/pen.png);
-    height: 200px;
-
-}*/
+.CustomDesign h2{
+    letter-spacing: -0.55px;
+}
+.CustomDesign p{
+    padding-top: 1px;
+    padding-left: 1px;
+}
 .CustomDesignLogo{
     background: url(../../../RSSchool/singolo/singolo/assets/img/pen.png);
     width: 60px;
     background-repeat: no-repeat;
-    margin-top: 14px;
+    margin-top: 15px;
 }
 .Ideas{
     margin-left: 20px;
     margin-bottom:-50px ;
 }
+.Ideas h2{
+    letter-spacing: -0.3px;
+}
+.Ideas p{
+    padding-top: 1px;
+    padding-left: 1px;
+}
 .IdeasLogo{
     background: url(../../../RSSchool/singolo/singolo/assets/img/lightbulb.png);
     width: 60px;
     background-repeat: no-repeat;
-    margin-top: 14px;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 19px;
 }
 
 .LoveIs{
     margin-left: 22px;
     margin-bottom:-50px ;
 }
+.LoveIs p{
+    padding-top: 1px;
+    margin-left: -1px;
+}
+.LoveIs h2{
+    margin-left: 0px;
+    word-spacing: 0px;
+}
 .LoveIsLogo{
     background: url(../../../RSSchool/singolo/singolo/assets/img/heart.png);
     width: 60px;
     background-repeat: no-repeat;
-    margin-top: 14px;
-    margin-left: 21px;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 .Responsive{
     margin-left: 20px;
     margin-top: -9px;
 }
+.Responsive p{
+    margin-top: -5.85px;
+    margin-left: 2px;
+    text-align: justify;
+    word-spacing: -1.1px;
+    letter-spacing: 0px;
+}
 .ResponsiveLogo{
     background: url(../../../RSSchool/singolo/singolo/assets/img/phone.png);
     width: 60px;
     background-repeat: no-repeat;
-    margin-top: 4px;
-    
+    margin-top: 5px;
 }
 .Support{
     margin-left: 19px;
-    margin-top: -8px;
-   
-    
+    margin-top: -8px;   
+}
+.Support h2{
+    margin-top: 14px;
+    margin-left: -2px;
+    word-spacing: -1px;
+}
+.Support p{
+    margin-top: -5px;
+    text-align: justify;
+    word-spacing: -1px;
+    letter-spacing: 0px;
 }
 .SupportLogo{
     background: url(../../../RSSchool/singolo/singolo/assets/img/bubble.png);
     width: 60px;
     background-repeat: no-repeat;
-    margin-top: 4px;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 18px;
+    margin-right: 2px;
 }
 .LikeAStar{
     margin-left: 21px;
@@ -286,12 +300,18 @@ color:#f06c64;
     
 }
 .LikeAStar h2{
-    letter-spacing: -0.2px;
+    letter-spacing: -0.3px;
+    margin-top: 14px;
+}
+.LikeAStar p{
+    margin-top: -5px;
+    margin-left: -2px;
 }
 .LikeAStarLogo{
     background: url(../../../RSSchool/singolo/singolo/assets/img/Star.png);
     width: 60px;
     background-repeat: no-repeat;
-    margin-top: 6px;
-    margin-left: 22px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 2px;
 }
