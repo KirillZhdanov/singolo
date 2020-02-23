@@ -1,14 +1,14 @@
 @font-face{
     font-family: Lato-Regular;
-    src: url(assets/LatoLatin/fonts/LatoLatin-Regular.woff)
+    src: url(assets/LatoLatin/LatoLatin-Regular.woff)
 }
 @font-face{
     font-family: Lato-Black;
-    src: url(assets/LatoLatin/fonts/LatoLatin-Black.woff)
+    src: url(assets/LatoLatin/LatoLatin-Black.woff)
 }
 @font-face{
     font-family: Lato-Bold;
-    src: url(assets/LatoLatin/fonts/LatoLatin-Bold.woff);
+    src: url(assets/LatoLatin/LatoLatin-Bold.woff);
 }
 body{
     margin: 0;
@@ -104,7 +104,7 @@ color:#f06c64;
 }
 .verticalPhone{
     position: absolute;
-    background: url(../../../RSSchool/singolo/singolo/assets/img/iPhone_Vertical.png) no-repeat;
+    background: url(assets/img/iPhone_Vertical.png) no-repeat;
     height:500px;
     width: 301px;
     border: none;
@@ -113,7 +113,7 @@ color:#f06c64;
 }
 .horizontalPhone{
     position: absolute;
-    background: url(../../../RSSchool/singolo/singolo/assets/img/iPhone_Horizontal.png) no-repeat;
+    background: url(assets/img/iPhone_Horizontal.png) no-repeat;
     height:500px;
     width: 500px;
     border: none;
@@ -123,7 +123,7 @@ color:#f06c64;
 .leftArrow{
     margin-top: 281px;
     position: absolute;
-    background: url(../../../RSSchool/singolo/singolo/assets/img/leftArrow.png) no-repeat;
+    background: url(assets/img/leftArrow.png) no-repeat;
     height:30px;
     width: 30px;
     border: none;
@@ -131,7 +131,7 @@ color:#f06c64;
 }
 .rightArrow{
     position: absolute;
-    background: url(../../../RSSchool/singolo/singolo/assets/img/rightArrow.png) no-repeat;
+    background: url(assets/img/rightArrow.png) no-repeat;
     height:30px;
     width: 30px;
     border: none;
@@ -211,7 +211,7 @@ color:#f06c64;
     padding-left: 1px;
 }
 .CustomDesignLogo{
-    background: url(../../../RSSchool/singolo/singolo/assets/img/pen.png);
+    background: url(assets/img/pen.png);
     width: 60px;
     background-repeat: no-repeat;
     margin-top: 15px;
@@ -228,7 +228,7 @@ color:#f06c64;
     padding-left: 1px;
 }
 .IdeasLogo{
-    background: url(../../../RSSchool/singolo/singolo/assets/img/lightbulb.png);
+    background: url(assets/img/lightbulb.png);
     width: 60px;
     background-repeat: no-repeat;
     margin-top: 15px;
@@ -248,7 +248,7 @@ color:#f06c64;
     word-spacing: 0px;
 }
 .LoveIsLogo{
-    background: url(../../../RSSchool/singolo/singolo/assets/img/heart.png);
+    background: url(assets/img/heart.png);
     width: 60px;
     background-repeat: no-repeat;
     margin-top: 15px;
@@ -266,7 +266,7 @@ color:#f06c64;
     letter-spacing: 0px;
 }
 .ResponsiveLogo{
-    background: url(../../../RSSchool/singolo/singolo/assets/img/phone.png);
+    background: url(assets/img/phone.png);
     width: 60px;
     background-repeat: no-repeat;
     margin-top: 5px;
@@ -287,7 +287,7 @@ color:#f06c64;
     letter-spacing: 0px;
 }
 .SupportLogo{
-    background: url(../../../RSSchool/singolo/singolo/assets/img/bubble.png);
+    background: url(assets/img/bubble.png);
     width: 60px;
     background-repeat: no-repeat;
     margin-top: 5px;
@@ -308,7 +308,7 @@ color:#f06c64;
     margin-left: -2px;
 }
 .LikeAStarLogo{
-    background: url(../../../RSSchool/singolo/singolo/assets/img/Star.png);
+    background: url(assets/img/Star.png);
     width: 60px;
     background-repeat: no-repeat;
     margin-top: 5px;
