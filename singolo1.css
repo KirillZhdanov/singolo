@@ -130,6 +130,9 @@ color:#f06c64;
     margin-left: 42px;
     cursor: pointer;
 }
+.leftArrow:hover{
+    opacity: 0.7;
+}
 .rightArrow{
     position: absolute;
     background: url(assets/img/rightArrow.png) no-repeat;
@@ -139,6 +142,9 @@ color:#f06c64;
     margin-left: 964px;
     margin-top: 281px;
     cursor: pointer;
+}
+.rightArrow:hover{
+    opacity: 0.7;
 }
 .Services{
     padding-top:10px;
@@ -189,7 +195,7 @@ color:#f06c64;
     letter-spacing: -0.5px;
 }
 .container h2:hover{
-    opacity: 0.5;
+    opacity: 0.7;
     cursor: pointer;
 }
 .container p{
