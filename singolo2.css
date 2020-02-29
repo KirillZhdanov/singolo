@@ -194,6 +194,7 @@ body{
     color: #666d89;
     font-family: "Lato-Bold";
     font-weight: 900;
+    white-space: nowrap;
 }
 .profileDescription p{
     margin-top: -6px;
