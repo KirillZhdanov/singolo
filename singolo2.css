@@ -195,6 +195,7 @@ body{
     font-family: "Lato-Bold";
     font-weight: 900;
     white-space: nowrap;
+    overflow: hidden;
 }
 .profileDescription p{
     margin-top: -6px;
