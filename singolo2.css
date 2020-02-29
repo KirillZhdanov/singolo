@@ -30,8 +30,9 @@ body{
 .Portfolio{
     margin-top: -31px;
     width: 1020px;
-    height: 870px;
+    height: 864px;
     background-color: #2d303a;
+    border-bottom: 6px solid #323746;
  
 }
 .Portfolio h1{
@@ -58,28 +59,34 @@ body{
     height: 728px;
     background-color: #f2f2f2;
     margin-top: -31px;
+    border-bottom: 6px solid #ffffff;
    
 }
-button{
+.buttonsSort button{
    
     border-radius: 5px;
-    background-color:#2d303a;
+    background-color:transparent;
     border: 1px solid #666d89;
     font-size: 12px;
     line-height: 6px;
     color: #666d89;
     font-family: "Lato-Light";
-    font-weight: 400;
+    font-weight: 900;
     text-align: left;
     height: 22px;
     
 }
+
 .buttonsSort{
     display: flex;
     width: 295px;
     margin-top: -7px;
     justify-content: space-around;
     
+}
+.buttonsSort button:hover{
+    color:#ffffff;
+    cursor: pointer;
 }
 .portfolioPics{
     margin-top: 18px;
@@ -153,9 +160,63 @@ button{
     overflow: hidden;
 }
 .profilePhotos{
+    margin-top: 44px;
     display: grid;
-    grid-template-columns: repeat(3, 302px);
-    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 19px;
     overflow: hidden;
 
+}
+.profilePic{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+#Scolara{
+    margin-left: 2px;
+}
+.profileDescription{
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 19px;
+    overflow: hidden;
+
+}
+.profileDescription h2{
+    word-spacing: -0.3px;
+    letter-spacing: -0.6px;
+    font-size: 19px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Bold";
+    font-weight: 900;
+}
+.profileDescription p{
+    margin-top: -6px;
+    word-spacing: 0.9px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #767e9e;
+    font-family: "Lato-Light";
+    font-weight: 300;
+    text-align: left;
+    overflow: hidden;
+}
+.profileIcons{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 19px;
+    overflow: hidden;
+}
+.profileIconsContainer:nth-child(3){
+   margin-left: 1px;
+}
+.profileIconsContainer{
+    padding-left: 1px;
+    width: 152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
