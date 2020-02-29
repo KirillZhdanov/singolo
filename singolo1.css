@@ -1,14 +1,14 @@
 @font-face{
     font-family: Lato-Regular;
-    src: url(assets/LatoLatin/LatoLatin-Regular.woff)
+    src: url(assets/fonts/LatoLatin/LatoLatin-Regular.woff)
 }
 @font-face{
     font-family: Lato-Black;
-    src: url(assets/LatoLatin/LatoLatin-Black.woff)
+    src: url(assets/fonts/LatoLatin/LatoLatin-Black.woff)
 }
 @font-face{
     font-family: Lato-Bold;
-    src: url(assets/LatoLatin/LatoLatin-Bold.woff);
+    src: url(assets/fonts/LatoLatin/LatoLatin-Bold.woff);
 }
 body{
     margin: 0;
