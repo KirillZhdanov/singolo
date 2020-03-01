@@ -10,6 +10,22 @@
     font-family: Lato-Bold;
     src: url(assets/fonts/LatoLatin/LatoLatin-Bold.woff);
 }
+@-moz-document url-prefix() {
+    h2 {
+      font-weight: lighter !important;
+    }
+    h1 {
+        font-weight: lighter !important;
+      }
+      p {
+        font-weight: lighter !important;
+      }
+      button{
+        font-weight: lighter !important;
+        padding: 5px;
+      }
+     
+  }
 body{
     margin: 0;
     padding: 0;
