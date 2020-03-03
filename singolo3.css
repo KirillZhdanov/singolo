@@ -55,13 +55,43 @@ body{
     font-size: 30px;
     color: #F0D8D9;
     padding-top: 64px;
+    word-spacing: -2.1px;
+    letter-spacing: 0.35px;
 }
 .containerQuote p{
     font-family: "Lato-Light";
     font-size: 18px;
     color: #F0D8D9;
-    margin-top:-11px;
-    line-height: 27px;
-    word-spacing: -0.5px;
-    letter-spacing: -0.1px;
-   }
+    margin-top:-12px;
+    line-height:30px;
+    word-spacing: -0.35px;
+    
+}
+.getQuoteContent{
+    display: grid;
+    grid-template-columns: 66% 34%;
+    column-gap: 20px;
+}
+.getQuoteInputs{
+    margin-top: 14px;
+    display: grid;
+    row-gap: 5px;
+   
+}
+.getQuoteInputs input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    line-height: 6px;
+   
+}
+
+div{
+    margin: 0;
+    padding-left: 15px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    display: flex;
+    align-self: center;
+}

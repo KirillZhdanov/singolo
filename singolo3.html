@@ -14,12 +14,20 @@
                 <h1>Get a Quote</h1>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
                 porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>      
-                <section class="getQuoteContent">
-                    <input type="text" id="name" name="name" required placeholder="Name(Required)"size="70">
-                    <input type="text" id="email" name="email" required placeholder="Email(Required)"size="70">
-                    <input type="text" id="subject" name="subject" placeholder="Subject"size="70">
-                    <textarea id="message" name="message"  placeholder="Describe your project in detail..."rows="10" cols="70"></textarea>
-                </section>
+                <form class="getQuoteContent">
+                    <section class="getQuoteInputs">    
+                        <div><input type="text" id="name" name="name" required placeholder="Name(Required)"size="70"></div>
+                        <div><input type="email" id="email" name="email" required placeholder="Email(Required)"size="70"></div>
+                        <div><input type="text" id="subject" name="subject" placeholder="Subject"size="70"></div>
+                        <div><textarea id="message" name="message"  placeholder="Describe your project in detail..."rows="10" cols="70"></textarea></div>
+                    </section>
+                    <section class="contactInfo">
+                        <h2>Contact Information</h2>
+                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. 
+                            Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
+                        </p>
+                    </section>
+                </form>
             </section>
         </section>
     </main>
