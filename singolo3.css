@@ -39,7 +39,7 @@ body{
 .getQuote{
     padding: 0;
     margin: 0 auto;
-    max-width: 1020px;
+    width: 1020px;
     height: 650px;
     background-color: #f06c64;
     margin-top: -32px;
@@ -48,7 +48,7 @@ body{
 .containerQuote{
     padding: 0;
     margin: 0 auto;
-    max-width: 940px;
+    width: 940px;
 }
 .containerQuote h1{
     font-family: "Lato-Bold";
@@ -123,7 +123,13 @@ body{
     border-radius: 50px;
     border: none;
     background-color: #d6564f;
+    color:#f48c8f;
 }
+.getQuoteInputs button:hover{
+    color:#fff;
+    cursor: pointer;
+}
+
 .contactInfo h2{
     font-family: "Lato-Bold";
     margin-top: 23px;
@@ -148,7 +154,10 @@ body{
 }
 .contacts {
     margin-top: 33px;
-    margin-left: 22px;
+    margin-left: 15px;
+    width: 150px;
+    display: grid;
+    grid-template-columns: auto 150px;
 }
 .contacts p {
     font-family: "Lato-Regular";
@@ -161,6 +170,7 @@ body{
 footer{
     background-color: #2d303a;
     height: 76px;
+    width: 1020px;
 }
 .foot{
     margin: 0 auto;
@@ -188,6 +198,19 @@ footer{
     margin: 15px 0 0 1px;
 
 }
+a{
+    text-decoration: none;
+}
+.map-icon{
+    margin:-8px 11px 0 -12px;
+}
+.phone-icon{
+    margin:-9px 5px 0 -14px;
+}
+.mail-icon{
+    margin:-9px 5px 0 -15px;
+}
+
 
 
 
