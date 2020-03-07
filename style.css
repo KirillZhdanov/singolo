@@ -161,7 +161,7 @@ color:#f06c64;
     letter-spacing: -0.17px;
     text-align: left;
     margin-top: 27px;
-    word-spacing: 0.3.5px;
+    word-spacing: 0px;
 }
 .containerServices{
     display: flex;
@@ -200,6 +200,7 @@ color:#f06c64;
 .CustomDesign{ 
     margin-left: 20px;
     margin-bottom:-50px ; 
+    height: 183px;
 }
 .CustomDesign h2{
     letter-spacing: -0.55px;
@@ -207,6 +208,8 @@ color:#f06c64;
 .CustomDesign p{
     padding-top: 1px;
     padding-left: 1px;
+    height: 60px;
+    overflow: hidden;    
 }
 .CustomDesignLogo{
     background: url(assets/img/pen.png);
@@ -224,6 +227,8 @@ color:#f06c64;
 .Ideas p{
     padding-top: 1px;
     padding-left: 1px;
+    height: 60px;
+    overflow: hidden;
 }
 .IdeasLogo{
     background: url(assets/img/lightbulb.png);
@@ -240,6 +245,8 @@ color:#f06c64;
 .LoveIs p{
     padding-top: 1px;
     margin-left: -1px;
+    height: 60px;
+    overflow: hidden;
 }
 .LoveIs h2{
     margin-left: 0px;
@@ -253,15 +260,16 @@ color:#f06c64;
     margin-left: 20px;
 }
 .Responsive{
-    margin-left: 20px;
-    margin-top: -9px;
+    margin: -10px 0 0 20px;;
 }
 .Responsive p{
-    margin-top: -5.85px;
+    margin-top: -7px;
     margin-left: 2px;
     text-align: justify;
     word-spacing: -1.1px;
     letter-spacing: 0px;
+    height: 60px;
+    overflow: hidden;
 }
 .ResponsiveLogo{
     background: url(assets/img/phone.png);
@@ -279,10 +287,12 @@ color:#f06c64;
     word-spacing: -1px;
 }
 .Support p{
-    margin-top: -5px;
+    margin-top: -7px;
     text-align: justify;
     word-spacing: -1px;
     letter-spacing: 0px;
+    height: 60px;
+    overflow: hidden;
 }
 .SupportLogo{
     background: url(assets/img/bubble.png);
@@ -295,15 +305,20 @@ color:#f06c64;
 .LikeAStar{
     margin-left: 21px;
     margin-top: -8px;
-    
+    width: 220px;
+    height: 100px;
 }
 .LikeAStar h2{
     letter-spacing: -0.3px;
     margin-top: 14px;
+    margin-left: -1px;
 }
 .LikeAStar p{
-    margin-top: -5px;
+    margin-top: -7px;
     margin-left: -2px;
+    height: 60px;
+    overflow: hidden;
+    text-align: justify;
 }
 .LikeAStarLogo{
     background: url(assets/img/Star.png);
@@ -411,7 +426,7 @@ body{
 .buttonsSort{
     display: flex;
     width: 295px;
-    margin-top: -7px;
+    margin: -9px 0 19px 0;
     justify-content: space-around;
     
 }
@@ -492,6 +507,7 @@ body{
     font-weight: 300;
     text-align: left;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .profilePhotos{
     margin-top: 44px;
@@ -515,6 +531,7 @@ body{
     grid-template-columns: repeat(3, 300px);
     grid-column-gap: 19px;
     overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 .profileDescription h2{
@@ -527,6 +544,7 @@ body{
     font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .profileDescription p{
     margin-top: -6px;
@@ -538,6 +556,8 @@ body{
     font-weight: 300;
     text-align: left;
     overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
 }
 .profileIcons{
     margin-top: 12px;
@@ -721,6 +741,9 @@ footer{
 a{
     text-decoration: none;
 }
+a h2:hover{
+    opacity: 0.5;
+}
 .map-icon{
     margin:-8px 11px 0 -12px;
 }
@@ -730,4 +753,13 @@ a{
 .mail-icon{
     margin:-9px 5px 0 -15px;
 }
-
+.ico:hover{
+   border-radius: 50%;
+   background-color: #f48c8f;
+   height: 32px;
+   width: 32px;
+}
+.divPic img:hover{
+    transition: 1s;
+    transform: scale(1.2); 
+}
