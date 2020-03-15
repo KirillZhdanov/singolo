@@ -18,6 +18,7 @@ header{
     height: 89px;
     border-bottom: 6px solid #323746;
     width: 1020px;
+    
 }
 .logo h1{
     margin-left:40px;
@@ -80,11 +81,15 @@ header{
 .header-nav li a:hover{
 color:#f06c64;
 }
+.header-nav-list li .active{
+    color:#f06c64;
+}
 .slider{
     background-color: #f06c64;
     min-height: 594px;
     width: 1020px;
     border-bottom:6px solid #ea676b;
+    overflow: hidden;
 }
 .verticalPhone{
     position: absolute;
@@ -113,6 +118,7 @@ color:#f06c64;
     border: none;
     margin-left: 42px;
     cursor: pointer;
+    z-index: 1000;
 }
 .leftArrow:hover{
     opacity: 0.7;
@@ -126,9 +132,61 @@ color:#f06c64;
     margin-left: 964px;
     margin-top: 281px;
     cursor: pointer;
+    z-index: 100;
 }
 .rightArrow:hover{
     opacity: 0.7;
+}
+.sliderContainer{
+    width: 2040px;
+}
+.phones{
+    width: 1020px;
+    float: left;
+}
+.secondSlide{
+    float: right;
+    background: url(assets/img/Slide2.png);
+    min-height: 594px;
+    width: 1020px;
+    transition: all 2s ease-in-out;
+   
+}
+.blackScreenVertical{
+    width: 190px;
+    height: 335px;
+    background-color: transparent;
+    margin:65px 0 0 15px;
+    border-radius: 1%;
+    
+}
+
+.buttonVertical{
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: blue;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin:10px 0 0 89px;
+}
+.blackScreenHorizontal{
+    width: 335px;
+    height: 190px;
+    background-color: transparent;
+    margin:-116px 0 0 60px;
+    border-radius: 1%;
+    
+}
+
+.buttonHorizontal{
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: blue;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin:88px 0 0 10px;
 }
 .Services{
     padding-top:10px;
@@ -427,7 +485,10 @@ body{
     height: 22px;
     
 }
-
+.buttonsSort .activeTab{
+    color: #000;
+    background-color: cadetblue;
+}
 .buttonsSort{
     display: flex;
     width: 295px;
@@ -447,6 +508,9 @@ body{
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     overflow: hidden;
+}
+.portfolioPics .activePic img{
+    border: 50px solid #F06C64;
 }
 .divPic:nth-child(n+13){
     display: none;
