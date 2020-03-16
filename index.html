@@ -14,8 +14,8 @@
    
 </div>
 <nav class="header-nav">
-   <ul class="header-nav-list">
-   <li><a href="#">Home</a></li>
+   <ul class="header-nav-list" id="nav-menu">
+   <li><a class="active" href="#">Home</a></li>
    <li><a href="#Services">Services</a></li>
    <li><a href="#Portfolio">Portfolio</a></li>
    <li><a href="#aboutUs">About</a></li>
@@ -26,11 +26,23 @@
 <main>
    <section class="slider">
       <button class="leftArrow"></button>
-      <section class="phones">
-         <section class="verticalPhone"></section>
-         <section class="horizontalPhone"></section>
-      </section>
       <button class="rightArrow"></button>
+      <section class="sliderContainer">
+        <section class="phones">
+            <section class="verticalPhone">
+            <div class="blackScreenVertical"></div>
+            <button class="buttonVertical"></button>   
+            </section>
+            <section class="horizontalPhone">
+                <button class="buttonHorizontal"></button> 
+                <div class="blackScreenHorizontal"></div>
+              
+            </section>
+        </section>
+      
+      <section class="secondSlide" id="secondSlide"></section>
+    </section>
+      
 
    </section>
    <section class="Services" id="Services">
@@ -91,17 +103,17 @@
       </section>
 </section>
 <section class="Portfolio" id="Portfolio">
-    <section class="container">
+    <section class="container" id="containerPortfolio">
         <h1>Portfolio</h1>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
             eget lacinia odio sem nec elit.</p>
-        <section class="buttonsSort">
+        <section class="buttonsSort" id="portfolioTabs">
         <button>All</button>
         <button>Web Design</button>
         <button>Graphic Design</button>
         <button>Artwork</button>
         </section>
-            <section class="portfolioPics">
+            <section class="portfolioPics" id="portfolioPics">
                 <div class="divPic"><img class="Pic1" src="./assets/img/Pic 1.png" alt="Pic 1" ></div>
                 <div class="divPic"><img class="Pic2" src="./assets/img/Pic 2.png" alt="Pic 2" ></div>
                 <div class="divPic"><img class="Pic3" src="./assets/img/Pic 3.png" alt="Pic 3" ></div>
@@ -176,12 +188,12 @@
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
         porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>      
         <section class="getQuoteContent">
-            <form class="getQuoteInputs">    
+            <form class="getQuoteInputs" id="form">    
                 <input type="text" id="name" name="name" required placeholder="Name(Required)"size="70">
                 <input type="email" id="email" name="email" required placeholder="Email(Required)"size="70">
                 <input type="text" id="subject" name="subject" placeholder="Subject"size="70">
                 <textarea id="message" name="message"  placeholder="Describe your project in detail..."rows="10" cols="70"></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit" id='submit-btn'>Submit</button>
             </form>
             <section class="contactInfo">
                 <h2>Contact Information</h2>
@@ -198,6 +210,16 @@
                 </section>
             </section>
         </section>
+        <div class="hidden" id="message-block">
+            <div id="message-box">
+                <h2>The letter was sent</h2>
+                <p id="subject-result"></p>
+                <p id="description-result"></p>
+                <button id="close-btn">OK</button>
+            </div>
+
+
+        </div>
     </section>
 </section>
 
@@ -214,5 +236,6 @@
     </section>
 </footer>
 </div> 
+<script src="script.js"></script>
 </body>
 </html>
