@@ -40,7 +40,7 @@
             </section>
         </section>
       
-      <section class="secondSlide"></section>
+      <section class="secondSlide" id="secondSlide"></section>
     </section>
       
 
@@ -103,7 +103,7 @@
       </section>
 </section>
 <section class="Portfolio" id="Portfolio">
-    <section class="container">
+    <section class="container" id="containerPortfolio">
         <h1>Portfolio</h1>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
             eget lacinia odio sem nec elit.</p>
@@ -188,12 +188,12 @@
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
         porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>      
         <section class="getQuoteContent">
-            <form class="getQuoteInputs">    
+            <form class="getQuoteInputs" id="form">    
                 <input type="text" id="name" name="name" required placeholder="Name(Required)"size="70">
                 <input type="email" id="email" name="email" required placeholder="Email(Required)"size="70">
                 <input type="text" id="subject" name="subject" placeholder="Subject"size="70">
                 <textarea id="message" name="message"  placeholder="Describe your project in detail..."rows="10" cols="70"></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit" id='submit-btn'>Submit</button>
             </form>
             <section class="contactInfo">
                 <h2>Contact Information</h2>
@@ -210,6 +210,16 @@
                 </section>
             </section>
         </section>
+        <div class="hidden" id="message-block">
+            <div id="message-box">
+                <h2>The letter was sent</h2>
+                <p id="subject-result"></p>
+                <p id="description-result"></p>
+                <button id="close-btn">OK</button>
+            </div>
+
+
+        </div>
     </section>
 </section>
 

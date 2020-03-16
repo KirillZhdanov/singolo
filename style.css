@@ -149,7 +149,7 @@ color:#f06c64;
     background: url(assets/img/Slide2.png);
     min-height: 594px;
     width: 1020px;
-    transition: all 2s ease-in-out;
+    transition: all 0s ease-in-out;
    
 }
 .blackScreenVertical{
@@ -165,16 +165,21 @@ color:#f06c64;
     width: 40px;
     height: 40px;
     border:none;
-    background-color: blue;
+    background-color:transparent;
     border-radius: 50%;
     opacity: 0.5;
     margin:10px 0 0 89px;
+    cursor: pointer;
+}
+.buttonVertical:hover{
+    background-color: #f06c64;
+    opacity:0.5;
 }
 .blackScreenHorizontal{
     width: 335px;
     height: 190px;
     background-color: transparent;
-    margin:-116px 0 0 60px;
+    margin:-117px 0 0 60px;
     border-radius: 1%;
     
 }
@@ -183,10 +188,15 @@ color:#f06c64;
     width: 40px;
     height: 40px;
     border:none;
-    background-color: blue;
+    background-color: transparent;
     border-radius: 50%;
     opacity: 0.5;
     margin:88px 0 0 10px;
+    cursor: pointer;
+}
+.buttonHorizontal:hover{
+    background-color: #f06c64;
+    opacity:0.5;
 }
 .Services{
     padding-top:10px;
@@ -509,8 +519,8 @@ body{
     grid-column-gap: 20px;
     overflow: hidden;
 }
-.portfolioPics .activePic img{
-    border: 50px solid #F06C64;
+.activePic{
+    border: 5px solid #F06C64;
 }
 .divPic:nth-child(n+13){
     display: none;
@@ -554,6 +564,7 @@ body{
 }
 .divPic{
     overflow: hidden;
+    cursor: pointer;
 }
 
 .aboutUs h1{
@@ -831,4 +842,32 @@ a h2:hover{
 .divPic img:hover{
     transition: 1s;
     transform: scale(1.2); 
+}
+.hidden{
+    display: none;
+}
+#message-block{
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #ea676b;
+    opacity: 0.9;
+}
+#message-box{
+  
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    
+
+}
+#message-box p{
+    opacity: 1;
+    color: black;
 }

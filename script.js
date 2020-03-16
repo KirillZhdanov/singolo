@@ -17,7 +17,7 @@ document.querySelector('.leftArrow').onclick=function leftArrowClick(){
     let transform=document.querySelector('.secondSlide').style.transform;
     console.log("IN: "+transform);
     if(transform=="translate(-2040px, 0px)"){
-   
+    
     transform="translate(-1020px,0px)";
   
     }
@@ -76,8 +76,7 @@ document.querySelector('.buttonsSort').onclick=function(){
     let node=document.querySelectorAll('.divPic');
     let node_array = Array.prototype.slice.call(node);
     node_array.sort((compareRandom));
-    console.log(node_array);
-    var el = document.getElementById("portfolioPics");
+    let el = document.getElementById("portfolioPics");
     while (el.firstChild) {
     el.removeChild(el.firstChild);
     }
@@ -86,16 +85,26 @@ document.querySelector('.buttonsSort').onclick=function(){
 };
 const PIC=document.getElementById('portfolioPics');
 PIC.addEventListener('click',(event)=>{
-    PIC.querySelectorAll('img').forEach(element=>element.classList.remove('activePic'));
-    event.target.classList.add('activePic');
+    PIC.querySelectorAll('div').forEach(element=>element.classList.remove('activePic'));
+    PIC.querySelectorAll('section').forEach(element=>element.classList.remove('activePic'));
+    event.target.parentNode.classList.add('activePic');
+    //Костыль
+    document.getElementById('containerPortfolio').classList.remove('activePic');
 });
-/*
-document.querySelector('.portfolioPics').onclick=function(){
-   var select=document.querySelector('.portfolioPics');
-   let node=document.querySelectorAll('.divPic');
-   let node_array = Array.prototype.slice.call(node);
-    //inner.style.opacity="0.5";
-    //document.
-    console.log("Pic"+node_array);
-};*/
+const BUTTON=document.getElementById('submit-btn');
+const CLOSE_BUTTON=document.getElementById('close-btn');
 
+BUTTON.addEventListener('click',(event)=>{
+   const subject=document.getElementById('subject').value.toString();
+   const description=document.getElementById('message').value.toString();
+   subject!=''?document.getElementById('subject-result').innerText="Subject: "+subject:document.getElementById('subject-result').innerText="Without subject ";
+   description!=''?document.getElementById('description-result').innerText="Description: "+description:document.getElementById('description-result').innerText="Without description ";
+   document.getElementById('message-block').classList.remove('hidden');
+   event.preventDefault(); 
+});
+CLOSE_BUTTON.addEventListener('click',()=>{
+    document.getElementById('subject-result').innerText='';
+    document.getElementById('description-result').innerText='';
+    document.getElementById('form').reset();
+    document.getElementById('message-block').classList.add('hidden');
+});
