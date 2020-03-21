@@ -1,48 +1,85 @@
 /**
  WebSite MENU
  */
+
+const LINKS = document.querySelectorAll('.header-nav-list a');
+for (let element of LINKS) {
+    element.addEventListener('click',(event)=>{
+        event.preventDefault();
+        document.querySelector(element.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+};
 const MENU=document.getElementById('nav-menu');
 
 MENU.addEventListener('click',(event)=>{
     MENU.querySelectorAll('a').forEach(element=>element.classList.remove('active'));
     event.target.classList.add('active');
 });
-
-function slide(val){
-document.querySelector('.secondSlide').style.transform=val;
-
-}
-document.querySelector('.leftArrow').onclick=function leftArrowClick(){
-
-    let transform=document.querySelector('.secondSlide').style.transform;
-    console.log("IN: "+transform);
-    if(transform=="translate(-2040px, 0px)"){
-    
-    transform="translate(-1020px,0px)";
+document.addEventListener('scroll',()=>{
   
-    }
-    else if(transform=="translate(-1020px, 0px)"){
-    transform="translate(-2040px,0)";}
-    else
-    transform="translate(-1020px,0)";
-    
-    
-    console.log("OUT: "+transform);
-    slide(transform);
-   
+    MENU.querySelectorAll('a').forEach(element=>element.classList.remove('active'));
+    let windowScroll=document.body.scrollTop||document.documentElement.scrollTop;
+    if(windowScroll<400){
+    document.getElementById('nav-home').classList.add('active');}
+    else if(windowScroll<900){
+        document.getElementById('nav-services').classList.add('active');}
+        else if(windowScroll<1500){
+            document.getElementById('nav-portfolio').classList.add('active');}
+                else if(windowScroll<2200){
+                    document.getElementById('nav-about').classList.add('active');}
+                    else
+                    document.getElementById('nav-contact').classList.add('active');
+});
 
-};
+let items = document.querySelectorAll('.slider .slide');
+let currentItem = 0;
 
-document.querySelector('.rightArrow').onclick=function(){
-    let transform=document.querySelector('.secondSlide').style.transform;
-    console.log(transform);
-    if(transform=="translate(-1020px, 0px)")
-    transform="translate(1020px, 0px)";
-    else
-    transform="translate(-1020px, 0px)";
-    slide(transform);
 
-};
+function changeCurrentItem(n) {
+	currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+
+	items[currentItem].classList.add(direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('activeSlide', direction);
+	});
+}
+
+function showItem(direction) {
+	items[currentItem].classList.add('next', direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+		this.classList.add('activeSlide');
+		
+	});
+}
+
+function nextItem(n) {
+	hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
+}
+
+function previousItem(n) {
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left');
+}
+
+document.querySelector('.leftArrow').addEventListener('click', function() {
+	previousItem(currentItem);
+	
+});
+
+document.querySelector('.rightArrow').addEventListener('click', function() {
+		nextItem(currentItem);
+
+});
+
 
 document.querySelector('.buttonVertical').onclick=function(){
     let bgcolor=document.querySelector('.blackScreenVertical').style.background;
@@ -69,13 +106,19 @@ TABS.addEventListener('click',(event)=>{
     event.target.classList.add('activeTab');
 });
 
-function compareRandom(a, b) {
-    return Math.random() - 0.5;
+function shuffle(a, b) {
+    return Math.random()- 0.5;
 }
 document.querySelector('.buttonsSort').onclick=function(){
     let node=document.querySelectorAll('.divPic');
     let node_array = Array.prototype.slice.call(node);
-    node_array.sort((compareRandom));
+   // node_array.sort((shuffle));
+    //node_array.reverse();
+   let randomOffset=Math.round(Math.random()*15);
+    randomOffset%12===0?randomOffset--:randomOffset;
+  for(let i=0;i<randomOffset;i++)
+   node_array.unshift(node_array.pop());
+  
     let el = document.getElementById("portfolioPics");
     while (el.firstChild) {
     el.removeChild(el.firstChild);
@@ -97,8 +140,8 @@ const CLOSE_BUTTON=document.getElementById('close-btn');
 BUTTON.addEventListener('click',(event)=>{
    const subject=document.getElementById('subject').value.toString();
    const description=document.getElementById('message').value.toString();
-   subject!=''?document.getElementById('subject-result').innerText="Subject: "+subject:document.getElementById('subject-result').innerText="Without subject ";
-   description!=''?document.getElementById('description-result').innerText="Description: "+description:document.getElementById('description-result').innerText="Without description ";
+   subject!=''?document.getElementById('subject-result').innerText="Subject: "+subject:document.getElementById('subject-result').innerText="No subject ";
+   description!=''?document.getElementById('description-result').innerText="Description: "+description:document.getElementById('description-result').innerText="No description ";
    document.getElementById('message-block').classList.remove('hidden');
    event.preventDefault(); 
 });

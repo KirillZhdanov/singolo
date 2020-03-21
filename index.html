@@ -15,20 +15,21 @@
 </div>
 <nav class="header-nav">
    <ul class="header-nav-list" id="nav-menu">
-   <li><a class="active" href="#">Home</a></li>
-   <li><a href="#Services">Services</a></li>
-   <li><a href="#Portfolio">Portfolio</a></li>
-   <li><a href="#aboutUs">About</a></li>
-   <li><a href="#contact">Contact</a></li>
+   <li><a id="nav-home" class="active" href="#fixed">Home</a></li>
+   <li><a id="nav-services" href="#Services">Services</a></li>
+   <li><a id="nav-portfolio" href="#Portfolio">Portfolio</a></li>
+   <li><a id="nav-about" href="#aboutUs">About</a></li>
+   <li><a id="nav-contact" href="#contact">Contact</a></li>
 </ul>
 </nav>
 </header>
 <main>
-   <section class="slider">
+    <div class="fixed" id="fixed"></div>
+   <section class="slider" id="slider">
       <button class="leftArrow"></button>
       <button class="rightArrow"></button>
       <section class="sliderContainer">
-        <section class="phones">
+        <section class="phones slide activeSlide">
             <section class="verticalPhone">
             <div class="blackScreenVertical"></div>
             <button class="buttonVertical"></button>   
@@ -40,7 +41,7 @@
             </section>
         </section>
       
-      <section class="secondSlide" id="secondSlide"></section>
+      <section class="secondSlide slide" id="slide"></section>
     </section>
       
 
