@@ -14,8 +14,10 @@ for (let element of LINKS) {
 const MENU=document.getElementById('nav-menu');
 
 MENU.addEventListener('click',(event)=>{
+    if(event.target.getAttribute('href')!=null){
     MENU.querySelectorAll('a').forEach(element=>element.classList.remove('active'));
-    event.target.classList.add('active');
+    event.target.classList.add('active');}
+    
 });
 document.addEventListener('scroll',()=>{
   
@@ -128,11 +130,14 @@ document.querySelector('.buttonsSort').onclick=function(){
 };
 const PIC=document.getElementById('portfolioPics');
 PIC.addEventListener('click',(event)=>{
+   
+    if(event.target.getAttribute('src')!=null){
     PIC.querySelectorAll('div').forEach(element=>element.classList.remove('activePic'));
     PIC.querySelectorAll('section').forEach(element=>element.classList.remove('activePic'));
     event.target.parentNode.classList.add('activePic');
     //Костыль
-    document.getElementById('containerPortfolio').classList.remove('activePic');
+//    document.getElementById('containerPortfolio').classList.remove('activePic');
+}
 });
 const BUTTON=document.getElementById('submit-btn');
 const CLOSE_BUTTON=document.getElementById('close-btn');
