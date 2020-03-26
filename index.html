@@ -9,25 +9,33 @@
 <body>
 <div class="wrapper">
 <header>
-<div class="logo">
-   <h1>SINGOLO</h1>
-   
-</div>
-<nav class="header-nav">
-   <ul class="header-nav-list" id="nav-menu">
-   <li><a id="nav-home" class="active" href="#fixed">Home</a></li>
-   <li><a id="nav-services" href="#Services">Services</a></li>
-   <li><a id="nav-portfolio" href="#Portfolio">Portfolio</a></li>
-   <li><a id="nav-about" href="#aboutUs">About</a></li>
-   <li><a id="nav-contact" href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <div class="headerContainer">            
+        <div class="logo">
+        <h1>SINGOLO</h1>
+        
+        </div>
+        <nav class="header-nav">
+        <ul class="header-nav-list" id="nav-menu">
+        <li><a id="nav-home" class="active" href="#fixed">Home</a></li>
+        <li><a id="nav-services" href="#Services">Services</a></li>
+        <li><a id="nav-portfolio" href="#Portfolio">Portfolio</a></li>
+        <li><a id="nav-about" href="#aboutUs">About</a></li>
+        <li><a id="nav-contact" href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
 </header>
 <main>
     <div class="fixed" id="fixed"></div>
    <section class="slider" id="slider">
-      <button class="leftArrow"></button>
-      <button class="rightArrow"></button>
+       <div class="arrows">
+            <div class="leftArrowContainer">
+                <button class="leftArrow"></button>
+            </div>
+            <div class="rightArrowContainer">
+                <button class="rightArrow"></button>
+            </div>
+        </div>
       <section class="sliderContainer">
         <section class="phones slide activeSlide">
             <section class="verticalPhone">
@@ -58,13 +66,16 @@
       
   
             <article class="containerServices">
-                  <div class="CustomDesignLogo"></div>
+                <div class="servCell">  
+                <div class="CustomDesignLogo"></div>
                   <section class="CustomDesign">
                      <h2>Custom Design</h2>
                                  <p>Curabitur vestibulum eget mauris quis laoreet.
                                      Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
 
                   </section>
+                </div>
+                <div class="servCell">
                   <div class="IdeasLogo"></div>
                   <section class="Ideas">
                      <h2>Inovative Ideas</h2>
@@ -72,6 +83,8 @@
                             nec rutrum tellus dolor id lorem.</p>
                     
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="LoveIsLogo"></div>
                   <section class="LoveIs">
                      <h2>Love Is The Answer</h2>
@@ -79,6 +92,8 @@
                         et consequat felis. Quisque condimentum.</p>
                  
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="ResponsiveLogo"></div>
                   <section class="Responsive">
                      <h2>Responsive Layout</h2>
@@ -86,6 +101,8 @@
                             Prae-sent elit leo.</p>
                    
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="SupportLogo"></div>
                   <section class="Support">
                      <h2>24 / 7 Support</h2>
@@ -93,6 +110,8 @@
                            Pellen- tesque egestas venenatis lorem .</p>
                    
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="LikeAStarLogo"></div>
                   <section class="LikeAStar">
                      <h2>Feel Like A Star</h2>
@@ -100,6 +119,7 @@
                             Fusce vitae aliquam tellus.</p>
                    
                   </section>
+                  </div>
             </article> 
       </section>
 </section>

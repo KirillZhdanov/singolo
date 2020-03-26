@@ -4,7 +4,7 @@
 
 const LINKS = document.querySelectorAll('.header-nav-list a');
 for (let element of LINKS) {
-    element.addEventListener('click',(event)=>{
+    element.addEventListener('click',()=>{
         event.preventDefault();
         document.querySelector(element.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
