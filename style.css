@@ -6,7 +6,8 @@ main{
 }
 
 header{
-    position: fixed;    
+    position: fixed;
+    z-index: 1000;    
 }
 .headerContainer{
     background-color: #2d303a;
@@ -22,7 +23,7 @@ header{
     border-bottom: 6px solid #323746;
     width: 98vw;
     max-width: 1020px;
-    z-index: 1000;
+    
 
     
 }
