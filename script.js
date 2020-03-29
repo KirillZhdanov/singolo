@@ -34,7 +34,7 @@ document.addEventListener('scroll',()=>{
         document.getElementById('nav-services').classList.add('active');}
         else if(windowScroll<1500){
             document.getElementById('nav-portfolio').classList.add('active');}
-                else if(windowScroll<2300){
+                else if(windowScroll<2100){
                     document.getElementById('nav-about').classList.add('active');}
                     else
                     document.getElementById('nav-contact').classList.add('active');
