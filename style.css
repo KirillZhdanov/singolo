@@ -795,13 +795,14 @@ body{
     letter-spacing: -0.1px;
 }
 .getQuoteInputs button{
-    margin: 0 auto;
     width: 30%;
     height: 38px;
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
-    background-color: #d6564f;
-    color:#f48c8f;
+    background-color: #FBC65F;
+    color:#886A30;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .getQuoteInputs button:hover{
     color:#fff;
@@ -1096,13 +1097,14 @@ a h2:hover{
         letter-spacing: -0.1px;
     }
     .getQuoteInputs button{
-        margin: 0 auto;
         width: 30%;
+        font-size: 20px;
+        text-transform: uppercase;
         height: 38px;
-        border-radius: 50px;
+        border-radius: 30px;
         border: none;
-        background-color: #d6564f;
-        color:#f48c8f;
+        background-color: #FBC65F;
+        color:#886A30;
     }
     .getQuoteInputs button:hover{
         color:#fff;
