@@ -9,25 +9,53 @@
 <body>
 <div class="wrapper">
 <header>
-<div class="logo">
-   <h1>SINGOLO</h1>
-   
-</div>
-<nav class="header-nav">
-   <ul class="header-nav-list" id="nav-menu">
-   <li><a id="nav-home" class="active" href="#fixed">Home</a></li>
-   <li><a id="nav-services" href="#Services">Services</a></li>
-   <li><a id="nav-portfolio" href="#Portfolio">Portfolio</a></li>
-   <li><a id="nav-about" href="#aboutUs">About</a></li>
-   <li><a id="nav-contact" href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <div class="headerContainer">            
+        <div class="hamburger">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <div></div>
+            </label>
+            <nav class="header-nav">
+                <div class="logo">
+                    <h1>SINGOLO</h1>
+                    
+                    </div>
+                <ul class="header-nav-list" id="nav-menu-mobile">
+                <li><a id="nav-home-mobile" class="active" href="#fixed">Home</a></li>
+                <li><a id="nav-services-mobile" href="#Services">Services</a></li>
+                <li><a id="nav-portfolio-mobile" href="#Portfolio">Portfolio</a></li>
+                <li><a id="nav-about-mobile" href="#aboutUs">About</a></li>
+                <li><a id="nav-contact-mobile" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+          </div>
+        <div class="logo">
+        <h1>SINGOLO</h1>
+        
+        </div>
+        <nav class="header-nav">
+        <ul class="header-nav-list" id="nav-menu">
+        <li><a id="nav-home" class="active" href="#fixed">Home</a></li>
+        <li><a id="nav-services" href="#Services">Services</a></li>
+        <li><a id="nav-portfolio" href="#Portfolio">Portfolio</a></li>
+        <li><a id="nav-about" href="#aboutUs">About</a></li>
+        <li><a id="nav-contact" href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
 </header>
 <main>
     <div class="fixed" id="fixed"></div>
    <section class="slider" id="slider">
-      <button class="leftArrow"></button>
-      <button class="rightArrow"></button>
+       <div class="arrows">
+            <div class="leftArrowContainer">
+                <button class="leftArrow"></button>
+            </div>
+            <div class="rightArrowContainer">
+                <button class="rightArrow"></button>
+            </div>
+        </div>
       <section class="sliderContainer">
         <section class="phones slide activeSlide">
             <section class="verticalPhone">
@@ -58,13 +86,16 @@
       
   
             <article class="containerServices">
-                  <div class="CustomDesignLogo"></div>
+                <div class="servCell">  
+                <div class="CustomDesignLogo"></div>
                   <section class="CustomDesign">
                      <h2>Custom Design</h2>
                                  <p>Curabitur vestibulum eget mauris quis laoreet.
                                      Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
 
                   </section>
+                </div>
+                <div class="servCell">
                   <div class="IdeasLogo"></div>
                   <section class="Ideas">
                      <h2>Inovative Ideas</h2>
@@ -72,6 +103,8 @@
                             nec rutrum tellus dolor id lorem.</p>
                     
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="LoveIsLogo"></div>
                   <section class="LoveIs">
                      <h2>Love Is The Answer</h2>
@@ -79,6 +112,8 @@
                         et consequat felis. Quisque condimentum.</p>
                  
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="ResponsiveLogo"></div>
                   <section class="Responsive">
                      <h2>Responsive Layout</h2>
@@ -86,6 +121,8 @@
                             Prae-sent elit leo.</p>
                    
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="SupportLogo"></div>
                   <section class="Support">
                      <h2>24 / 7 Support</h2>
@@ -93,6 +130,8 @@
                            Pellen- tesque egestas venenatis lorem .</p>
                    
                   </section>
+                </div>
+                  <div class="servCell">
                   <div class="LikeAStarLogo"></div>
                   <section class="LikeAStar">
                      <h2>Feel Like A Star</h2>
@@ -100,6 +139,7 @@
                             Fusce vitae aliquam tellus.</p>
                    
                   </section>
+                  </div>
             </article> 
       </section>
 </section>
@@ -139,48 +179,54 @@
              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             
         <section class="profilePhotos">
-        <div class="profilePic" id="Adam"><img src="./assets/img/Adam.png" alt="Adam"></div>
-        <div class="profilePic" id="Desmond"><img src="./assets/img/Desmond.png" alt="Desmond"></div>
-        <div class="profilePic" id="Scolara"><img src="./assets/img/Scolara.png" alt="Scolara"></div>
+        <div class="profilePic" id="Adam"><img src="./assets/img/Adam.png" alt="Adam">
+            <section class="profileDescription">
+                <div>
+                    <a href="#"><h2>Adam Jensen</h2></a>
+                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, 
+                        nec rutrum tellus dolor id lorem.</p>
+                </div>
+            </section>
+            <div class="profileIconsContainer">
+                <div class="ico"><a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Facebook"></a></div>
+                <div class="ico"><a href="https://plus.google.com/"><img src="./assets/img/google+.png" alt="Google+"></a></div>
+                <div class="ico"><a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="Twitter"></a></div>
+                <div class="ico"><a href="https://www.linkedin.com/"><img src="./assets/img/linkedin.png" alt="Linked In"></a></div>
+            </div>
+        </div>
+        <div class="profilePic" id="Desmond"><img src="./assets/img/Desmond.png" alt="Desmond">
+            <section class="profileDescription">
+                <div>
+                    <a href="#"><h2>Desmond Miles</h2></a>
+                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, 
+                        viverra lacus ut, ultrices velit.</p>
+                </div>
+             </section>
+             <div class="profileIconsContainer">
+                <div class="ico"><a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Facebook"></a></div>
+                <div class="ico"><a href="https://plus.google.com/"><img src="./assets/img/google+.png" alt="Google+"></a></div>
+                <div class="ico"><a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="Twitter"></a></div>
+                <div class="ico"><a href="https://www.linkedin.com/"><img src="./assets/img/linkedin.png" alt="Linked In"></a></div>
+            </div>
+        </div>
+        <div class="profilePic" id="Scolara"><img src="./assets/img/Scolara.png" alt="Scolara">
+                <section class="profileDescription">
+                    <div>
+                        <a href="#"><h2>Scolara Visari</h2></a>
+                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, 
+                            et consequat felis. Quisque condimentum.</p>
+                    </div>
+                </section>
+                <div class="profileIconsContainer">
+                    <div class="ico"><a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Facebook"></a></div>
+                    <div class="ico"><a href="https://plus.google.com/"><img src="./assets/img/google+.png" alt="Google+"></a></div>
+                    <div class="ico"><a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="Twitter"></a></div>
+                    <div class="ico"><a href="https://www.linkedin.com/"><img src="./assets/img/linkedin.png" alt="Linked In"></a></div>
+                </div>
+        </div>
             
         </section>
-        <section class="profileDescription">
-            <div>
-                <a href="#"><h2>Adam Jensen</h2></a>
-                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, 
-                    nec rutrum tellus dolor id lorem.</p>
-            </div>
-            <div>
-                <a href="#"><h2>Desmond Miles</h2></a>
-                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, 
-                    viverra lacus ut, ultrices velit.</p>
-            </div>
-            <div>
-                <a href="#"><h2>Scolara Visari</h2></a>
-                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, 
-                    et consequat felis. Quisque condimentum.</p>
-            </div>
-        </section>
-        <section class="profileIcons">
-            <div class="profileIconsContainer">
-                <div class="ico"><a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Facebook"></a></div>
-                <div class="ico"><a href="https://plus.google.com/"><img src="./assets/img/google+.png" alt="Google+"></a></div>
-                <div class="ico"><a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="Twitter"></a></div>
-                <div class="ico"><a href="https://www.linkedin.com/"><img src="./assets/img/linkedin.png" alt="Linked In"></a></div>
-            </div>
-            <div class="profileIconsContainer">
-                <div class="ico"><a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Facebook"></a></div>
-                <div class="ico"><a href="https://plus.google.com/"><img src="./assets/img/google+.png" alt="Google+"></a></div>
-                <div class="ico"><a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="Twitter"></a></div>
-                <div class="ico"><a href="https://www.linkedin.com/"><img src="./assets/img/linkedin.png" alt="Linked In"></a></div>
-            </div>
-            <div class="profileIconsContainer">
-                <div class="ico"><a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="Facebook"></a></div>
-                <div class="ico"><a href="https://plus.google.com/"><img src="./assets/img/google+.png" alt="Google+"></a></div>
-                <div class="ico"><a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="Twitter"></a></div>
-                <div class="ico"><a href="https://www.linkedin.com/"><img src="./assets/img/linkedin.png" alt="Linked In"></a></div>
-            </div>
-        </section>
+      
 </section>
 </section>
 <section class="getQuote" id="contact">
