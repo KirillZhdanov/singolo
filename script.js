@@ -50,7 +50,7 @@ document.addEventListener('scroll',()=>{
         document.getElementById('nav-services-mobile').classList.add('active');}
         else if(windowScroll<1500){
             document.getElementById('nav-portfolio-mobile').classList.add('active');}
-                else if(windowScroll<2300){
+                else if(windowScroll<2400){
                     document.getElementById('nav-about-mobile').classList.add('active');}
                     else
                     document.getElementById('nav-contact-mobile').classList.add('active');
