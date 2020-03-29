@@ -426,8 +426,6 @@ color:#f06c64;
    
 }
 .LikeAStar{
-    margin-left: 21px;
-    
     width: 220px;
     height: 100px;
 }
@@ -496,15 +494,16 @@ body{
 }
 .container{
     padding: 0;
-    margin: 0 auto;
+    margin: 0 4vw;
     max-width: 940px;
     
 }
 
 .Portfolio{
     margin-top: -31px;
-    width: 1020px;
-    height: 864px;
+    width: 100%;
+    max-width: 1020px;
+    height: 1102px;
     background-color: #2d303a;
     border-bottom: 5px solid #323746;
  
@@ -529,8 +528,8 @@ body{
     overflow: hidden;
 }
 .aboutUs{
-    width: 1020px;
-    height: 728px;
+    max-width: 1020px;
+    min-height: 728px;
     background-color: #f2f2f2;
     margin-top: -31px;
     border-bottom: 6px solid #ffffff;
@@ -568,8 +567,7 @@ body{
 .portfolioPics{
     margin-top: 17px;
     display: grid;
-    grid-template-columns: repeat(4, 220px);
-    grid-template-rows: repeat(3,187px);
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     overflow: hidden;
@@ -579,7 +577,7 @@ body{
 }
 .divPic:nth-child(n+13){
     display: none;
-}
+}/*
 .Pic1{
     margin: -11px 0 0 -8px;
 }
@@ -616,7 +614,7 @@ body{
 }
 .Pic12{
     margin: -60px 0 0 -36px;
-}
+}*/
 .divPic{
     overflow: hidden;
     cursor: pointer;
@@ -647,24 +645,25 @@ body{
 .profilePhotos{
     margin-top: 44px;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 19px;
     overflow: hidden;
 
 }
 .profilePic{
-    height: 300px;
-    width: 300px;
+    max-width: 300px;
+    width: 30vw;
     overflow: hidden;
+}
+.profilePic>img{
+    width: 30vw;
+    max-width: 300px;
 }
 #Scolara{
     margin-left: 2px;
 }
 .profileDescription{
     margin-top: 3px;
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-column-gap: 19px;
     overflow: hidden;
     text-overflow: ellipsis;
 
@@ -714,16 +713,17 @@ body{
 .getQuote{
     padding: 0;
     margin: 0 auto;
-    width: 1020px;
-    height: 650px;
+    width: 100%;
+    max-width: 1020px;
+    min-height: 650px;
     background-color: #f06c64;
     margin-top: -30px;
     border-bottom:4px solid #ea676b;
 }
 .containerQuote{
     padding: 0;
-    margin: 0 auto;
-    width: 940px;
+    margin: 0 4vw;
+    max-width: 940px;
 }
 .containerQuote h1{
     font-family: "Lato-Bold";
@@ -744,12 +744,13 @@ body{
 }
 .getQuoteContent{
     display: grid;
-    grid-template-columns: 66% 34%;
+    grid-auto-flow:column;
     column-gap: 20px;
 }
 .getQuoteInputs{
     margin-top: 23px;
     display: grid;
+    width: 63vw;
     row-gap: 7px;
    
 }
@@ -759,7 +760,8 @@ body{
     line-height: 6px;
     margin-bottom: 9px;
     padding-left: 15px;
-    width: 604px;
+    width: 59.3vw;
+    max-width: 604px;
     height: 36px;
     border-radius: 5px;
     background-color: #d6564f;
@@ -778,7 +780,8 @@ body{
     line-height: 33px;
     margin-bottom: 9px;
     padding-left: 15px;
-    width: 602px;
+    width: 59.3vw;
+    max-width: 602px;
     height: 198px;
     border-radius: 5px;
     background-color: #d6564f;
@@ -826,6 +829,8 @@ body{
 }
 .contactInfo{
     margin-right: 1px;
+    min-width: 200px;
+    max-width: 300px;
 }
 .contacts {
     margin-top: 33px;
@@ -845,14 +850,14 @@ body{
 footer{
     background-color: #2d303a;
     height: 76px;
-    width: 1020px;
+    max-width: 1020px;
 }
 .foot{
     margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
 }
 .footerImg{
@@ -862,16 +867,6 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
-.copyright{
-    font-family: "Lato-Regular";
-    font-size: 12px;
-    line-height: 18px;
-    color: #666d89;
-    text-align: justify;
-    letter-spacing: 0px;
-    margin: 15px 0 0 1px;
-
 }
 a{
     text-decoration: none;
@@ -994,6 +989,9 @@ a h2:hover{
     max-height: 126px;
     justify-content: space-between;
 }
+.hamburger{
+    display: none;
+}
 @media only screen and (min-width: 1020px) {
     .verticalPhone{
         background-size: unset;
@@ -1018,4 +1016,470 @@ a h2:hover{
         margin-left: 29px;
         margin-top: -1px;
     }
+    .getQuote{
+        padding: 0;
+        margin: 0 auto;
+        width: 1020px;
+        height: 650px;
+        background-color: #f06c64;
+        margin-top: -30px;
+        border-bottom:4px solid #ea676b;
+    }
+    .containerQuote{
+        padding: 0;
+        margin: 0 auto;
+        width: 940px;
+    }
+    .containerQuote h1{
+        font-family: "Lato-Bold";
+        font-size: 30px;
+        color: #F0D8D9;
+        padding-top: 62px;
+        word-spacing: -2.1px;
+        letter-spacing: 0.35px;
+    }
+    .containerQuote p{
+        font-family: "Lato-Light";
+        font-size: 18px;
+        color: #F0D8D9;
+        margin-top:-12px;
+        line-height:30px;
+        word-spacing: -0.35px;
+        
+    }
+    .getQuoteContent{
+        display: grid;
+        grid-template-columns: 66% 34%;
+        column-gap: 20px;
+    }
+    .getQuoteInputs{
+        margin-top: 23px;
+        display: grid;
+        row-gap: 7px;
+       
+    }
+    .getQuoteInputs input{
+        background-color: transparent;
+        border: none;
+        line-height: 6px;
+        margin-bottom: 9px;
+        padding-left: 15px;
+        width: 604px;
+        height: 36px;
+        border-radius: 5px;
+        background-color: #d6564f;
+        
+    }
+    .getQuoteInputs input::placeholder{
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        color:#f48c8f;
+        letter-spacing: 0.45px;
+        
+    }
+    .getQuoteInputs textarea{
+        background-color: transparent;
+        border: none;
+        line-height: 33px;
+        margin-bottom: 9px;
+        padding-left: 15px;
+        width: 602px;
+        height: 198px;
+        border-radius: 5px;
+        background-color: #d6564f;
+        resize: none;
+    }
+    .getQuoteInputs textarea::placeholder{
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        color:#f48c8f;
+        word-spacing: -0.2px;
+        letter-spacing: -0.1px;
+    }
+    .getQuoteInputs button{
+        margin: 0 auto;
+        width: 30%;
+        height: 38px;
+        border-radius: 50px;
+        border: none;
+        background-color: #d6564f;
+        color:#f48c8f;
+    }
+    .getQuoteInputs button:hover{
+        color:#fff;
+        cursor: pointer;
+    }
+    
+    .contactInfo h2{
+        font-family: "Lato-Bold";
+        margin-top: 23px;
+        font-size: 18px;
+        color: #F0D8D9;
+        word-spacing: -2.1px;
+        letter-spacing: 0.35px;
+    }
+    .contactInfo p{
+        font-family: "Lato-Regular";
+        margin-top: -8px;
+        font-size: 12px;
+        line-height: 21.95px;
+        color: #F0D8D9;
+        word-spacing: -0.7px;
+        letter-spacing: -0.1px;
+        text-align: justify;
+        padding-right: 17px;
+    }
+    .contactInfo{
+        margin-right: 1px;
+    }
+    .contacts {
+        margin-top: 33px;
+        margin-left: 15px;
+        width: 150px;
+        display: grid;
+        grid-template-columns: auto 150px;
+    }
+    .contacts p {
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        line-height: 18px;
+        color: #F0D8D9;
+        text-align: justify;
+        letter-spacing: 0.05px;
+    }
+    .profilePhotos{
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-column-gap: 19px;
+        overflow: hidden;
+    
+    }
+    .profilePic{
+        /*height: 300px;*/
+        width: 300px;
+        overflow: hidden;
+    }
+    #Scolara{
+        margin-left: 2px;
+    }
+    .profileDescription{
+        margin-top: 3px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-column-gap: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
+    }
+    .profileDescription h2{
+        word-spacing: -0.3px;
+        letter-spacing: -0.6px;
+        font-size: 19px;
+        line-height: 18px;
+        color: #666d89;
+        font-family: "Lato-Bold";
+        font-weight: 900;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .profileDescription p{
+        margin-top: -6px;
+        word-spacing: 0.9px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #767e9e;
+        font-family: "Lato-Light";
+        font-weight: 300;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+    }
+    .profileIcons{
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-column-gap: 19px;
+        overflow: hidden;
+    }
+    .profileIconsContainer:nth-child(3){
+       margin-left: 1px;
+    }
+    .profileIconsContainer{
+        padding-left: 1px;
+        width: 152px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container{
+        padding: 0;
+        margin: 0 auto;
+        max-width: 940px;
+        
   }
+  .portfolioPics{
+    margin-top: 17px;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(3,187px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    overflow: hidden;
+}
+.divPic:nth-child(n+13){
+    display: none;
+}
+.Portfolio{
+    margin-top: -31px;
+    width: 1020px;
+    height: 864px;
+    background-color: #2d303a;
+    border-bottom: 5px solid #323746;
+ 
+}
+.Portfolio h1{
+    padding-top: 71px;
+    font-size: 31px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Bold";
+    font-weight: 900;
+}
+.Portfolio p{
+    margin-top: -5px;
+    word-spacing: -1.3px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato-Light";
+    font-weight: 300;
+    text-align: left;
+    overflow: hidden;
+}
+
+}
+@media only screen and (max-width:760px) {
+    .portfolioPics{
+        margin-top: 17px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(29vw,1fr));
+        overflow: hidden;
+    }
+    .divPic>img{
+        width: 54%;
+    }
+    .divPic:nth-child(n+9){
+        display: none;
+    }
+    .Portfolio{
+        margin-top: -31px;
+        width: 100%;
+        max-width: 1020px;
+        min-height: 886px;
+        background-color: #2d303a;
+        border-bottom: 5px solid #323746;
+     
+    }
+    .headerContainer{
+        display: block;
+    }
+    .logo{
+        width: 54%;
+        margin: 0 auto;
+        
+    }
+    .header-nav>.logo>h1{
+        position: absolute;
+        font-size: 19.6875px;
+        margin: -50px 0 50px 20px;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    .hamburger input {
+        opacity: 0;
+      }
+      
+      .hamburger input:checked ~ .menu__btn > div {
+        transform: rotate(90deg);
+      }
+      
+      .hamburger input:checked ~ .header-nav {
+        visibility: visible;
+        left: 0;
+      }
+      
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 29px;
+        left: 35px;
+        width: 26px;
+        height: 26px;
+      
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .menu__btn > div,
+      .menu__btn > div::before,
+      .menu__btn > div::after {
+        display: inline-block;
+        position: absolute;
+      
+        width: 100%;
+        height: 2px;
+      
+        background-color: #616161;
+      
+        transition-duration: .25s;
+      }
+      .menu__btn > div::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > div::after {
+        content: '';
+        top: 8px;
+      }
+      
+      .header-nav {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        max-width: 75%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background: #2D303A;
+        box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+        transition-duration: .25s;
+      }
+      .header-nav-list {
+        margin: 30vw auto;
+        height: 80vw;
+        width: 50%;
+        position: relative;
+        display: flex;      
+        list-style: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+      
+    }
+    .header-nav-list li a{
+        font-size: 20px;
+    }
+    .header-nav-list li::after{
+        display: none;
+    }
+      .header-nav{
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+      
+        width: 300px;
+        height: 100%;
+      
+        margin: 0;
+        padding: 80px 0;
+      
+        list-style: none;
+      
+        background: #2D303A;
+        box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+      
+        transition-duration: .25s;
+      }
+      
+      
+      
+}
+@media only screen and (max-width: 400px) {
+    .portfolioPics{
+        margin-top: 17px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28vw,1fr));
+        overflow: hidden;
+    }
+    .divPic>img{
+        width: 100%;
+    }
+    .divPic:nth-child(n+9){
+        display: none;
+    }
+    .Portfolio{
+        margin-top: -31px;
+        width: 100%;
+        max-width: 1020px;
+        max-height: 886px;
+        background-color: #2d303a;
+        border-bottom: 5px solid #323746;
+     
+    }
+    .profilePhotos{
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 19px;
+        overflow: hidden;
+    
+    }
+    .profilePic{
+        max-width: 378px;
+        width: 72vw;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .profilePic>img{
+        width: 72vw;
+        max-width: 508px;
+    }
+    #Scolara{
+        margin-left: auto;
+    }
+    .profileIconsContainer{
+        margin-bottom: 3vw;
+    }
+    .getQuoteContent{
+        display: grid;
+        grid-auto-flow: row;
+    }
+    .getQuoteInputs input{
+        width: 86.3vw;
+    }
+    .getQuoteInputs textarea{
+        width: 86.3vw;
+    }
+    .getQuoteInputs button{
+        width: 100%;
+    }
+    .Ideas{
+        margin-left: 20px;
+    }
+    
+    
+    .LoveIs{
+        margin-left: 20px;
+    }
+      .Responsive{
+        margin-left: 20px;
+    }
+    .Support{
+        margin-left: 20px;
+     
+    }
+    
+    .LikeAStar{
+        margin-left: 20px;
+    }
+}
