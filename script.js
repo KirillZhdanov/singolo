@@ -12,13 +12,19 @@ for (let element of LINKS) {
     });
 };
 const MENU=document.getElementById('nav-menu');
+const MOBILE=document.getElementById('nav-menu-mobile');
 
-MENU.addEventListener('click',(event)=>{
-    if(event.target.getAttribute('href')!=null){
-    MENU.querySelectorAll('a').forEach(element=>element.classList.remove('active'));
-    event.target.classList.add('active');}
-    
-});
+removeLinks(MENU);
+removeLinks(MOBILE);
+function removeLinks(linkByID){
+    linkByID.addEventListener('click',(event)=>{
+        if(event.target.getAttribute('href')!=null){
+            linkByID.querySelectorAll('a').forEach(element=>element.classList.remove('active'));
+        event.target.classList.add('active');}
+        
+    });
+}
+
 document.addEventListener('scroll',()=>{
   
     MENU.querySelectorAll('a').forEach(element=>element.classList.remove('active'));
@@ -29,11 +35,29 @@ document.addEventListener('scroll',()=>{
         document.getElementById('nav-services').classList.add('active');}
         else if(windowScroll<1500){
             document.getElementById('nav-portfolio').classList.add('active');}
-                else if(windowScroll<2200){
+                else if(windowScroll<2300){
                     document.getElementById('nav-about').classList.add('active');}
                     else
                     document.getElementById('nav-contact').classList.add('active');
 });
+
+document.addEventListener('scroll',()=>{
+  
+    MOBILE.querySelectorAll('a').forEach(element=>element.classList.remove('active'));
+    let windowScroll=document.body.scrollTop||document.documentElement.scrollTop;
+    if(windowScroll<320){
+    document.getElementById('nav-home-mobile').classList.add('active');}
+    else if(windowScroll<900){
+        document.getElementById('nav-services-mobile').classList.add('active');}
+        else if(windowScroll<1500){
+            document.getElementById('nav-portfolio-mobile').classList.add('active');}
+                else if(windowScroll<2300){
+                    document.getElementById('nav-about-mobile').classList.add('active');}
+                    else
+                    document.getElementById('nav-contact-mobile').classList.add('active');
+});
+
+
 
 let items = document.querySelectorAll('.slider .slide');
 let currentItem = 0;
