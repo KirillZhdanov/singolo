@@ -24,7 +24,6 @@ function removeLinks(linkByID){
         
     });
 }
-
 document.addEventListener('scroll',()=>{
   
     MENU.querySelectorAll('a').forEach(element=>element.classList.remove('active'));

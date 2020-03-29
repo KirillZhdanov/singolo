@@ -902,14 +902,13 @@ a h2:hover{
     height: 100vw;
     top: 0;
     left: 0;
-    background-color: #ea676b;
-    opacity: 0.9;
+    background-color: rgba(234, 103, 107, 0.4);
     z-index: 1000000;
 }
 #message-box{
   
     background-color: white;
-    width: 600px;
+    max-width: 600px;
     margin: 100px auto;
     border: 2px solid black;
     text-align: center;
